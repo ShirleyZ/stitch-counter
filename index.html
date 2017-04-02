@@ -1,8 +1,8 @@
 <html>
-	<head>
-		<title>Stitch calc</title>
-		<script src="js.js"></script>
-		<style type="text/css">
+<head>
+	<title>Stitch calc</title>
+	<script src="js.js"></script>
+	<style type="text/css">
 		.calcType {
 			margin: 15px 0;
 		}
@@ -11,39 +11,49 @@
 			font-style: italic;
 			color: grey;
 		}
-		</style>
-	</head>
-	<body>
-		<div style="width:60%;margin: auto; margin-top: 200px;">
-			Starting stitches: <input type="number" id="num" value="10">
 
-			<div class="calcType">
-				I want to multiply stitches by: 
-				<input type="number" id="multi">
-				<br>
-				<span class="helper-text">
-					e.g. starting stitches * multiply by
-				</span>
-				<br>
-				<button onclick="calc()">Multiply</button>
-			</div>
+		html {
+			background-color: #dcf3fb;
+		}
+	</style>
+</head>
+<body>
+<div style="width:60%;margin: auto;">
+		<h1>Stitch Calculator</h1>
+		<p>
+			Quick little calculator useful for knitting/crochet/whatever else projects. Any requests/tweaks just contact me at <b>shirley.zhang(at)hotmail.com.au</b> (the .au is important)
+		</p>
+		<br>
+		<br>
+		Starting stitches: <input type="number" id="num" value="10">
 
-			<div class="calcType">
-				I want to make 
-				<input type="number" id="numIncrement" value="3">
-				stitches every <input type="number" id="incrementPer" value="5"> stitches
-				<br>
-				<span class="helper-text">
-					e.g. I want to make 2 stitches every 3 stitches means '2ss every 3 ss'
-				</span>
-				<br>
-				<button onclick="calcN()">Increment stitches</button> 
-				<br>
-			</div>
-			<p>Answer: <span id="ans"></span></p>
-			<div id="working">
-				
-			</div>
+		<div class="calcType">
+			I want to multiply stitches by: 
+			<input type="number" id="multi">
+			<br>
+			<span class="helper-text">
+				e.g. starting stitches * multiply by
+			</span>
+			<br>
+			<button onclick="calc()">Multiply</button>
 		</div>
-	</body>
+
+		<div class="calcType">
+			I want to make 
+			<input type="number" id="numIncrement" value="3">
+			stitches every <input type="number" id="incrementPer" value="5"> stitches
+			<br>
+			<span class="helper-text">
+				e.g. I want to make 2 stitches every 3 stitches means '2ss every 3 ss'
+			</span>
+			<br>
+			<button onclick="calcN()">Increment stitches</button> 
+			<br>
+		</div>
+		<p>Answer: <span id="ans"></span></p>
+		<div id="working">
+
+		</div>
+	</div>
+</body>
 </html>
